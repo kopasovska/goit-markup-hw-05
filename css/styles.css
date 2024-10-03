@@ -664,7 +664,7 @@ input {
     left: 16px;
     fill: #2e2f42;
     transform: translateY(-50%);
-    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .form-input {
@@ -685,6 +685,10 @@ input {
 
 .form-input:focus + svg {
     fill: #4d5ae5;
+}
+
+.textarea-container {
+    margin-bottom: 16px;
 }
 
 .form-textarea {
@@ -717,7 +721,6 @@ input {
 }
 
 .checkbox-container {
-    margin-top: 16px;
     margin-bottom: 24px;
 }
 
@@ -736,7 +739,7 @@ input {
     margin-right: 8px;
 }
 
-input[type="checkbox"]:checked .box {
+.checkbox-container input[type="checkbox"]:checked + .form-label .box {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
