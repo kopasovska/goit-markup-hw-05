@@ -441,6 +441,7 @@ input {
     letter-spacing: 0.02em;
     font-weight: 500;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .site-footer {
@@ -517,7 +518,7 @@ input {
     display: flex;
     gap: 24px;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .footer-form-input {
@@ -532,7 +533,6 @@ input {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    margin-top: 16px;
 }
 
 .footer-form-input::placeholder {
